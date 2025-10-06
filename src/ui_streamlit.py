@@ -21,4 +21,5 @@ if st.button("Analyze"):
     st.write(f"**Total Cost:** {total}")
     st.write(f"**Level-wise Cost:** {levels}")
     st.write(f"**Master Theorem Complexity:** {master_theorem(a, b, 1)}")
-    st.pyplot(plot_cost_bar(levels))
+    fig = plot_cost_bar(levels)
+    st.pyplot(fig)
